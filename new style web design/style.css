@@ -1,0 +1,52 @@
+.banner{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner .slider{
+    --quantity: 6; /* Set to the number of items you have */
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 10%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autorun 20s linear infinite;
+    will-change: transform;
+}
+@keyframes autorun{
+    from{
+        transform: perspective(1000px) rotateY(0deg);
+    }to{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+
+    }
+
+
+.banner .slider .item{
+    /* IMPORTANT: Each .item must have a unique --position custom property set inline in HTML or via JavaScript, e.g.:
+       <div class="item" style="--position:1"></div>
+       This is required for the carousel effect to distribute items in a circle. */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* Use --carousel-depth for easy adjustment of carousel radius */
+    --carousel-depth: 550px;
+    transform:
+        rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
+        translateZ(var(--carousel-depth));
+}
+
+
+
+.banner .slider .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
