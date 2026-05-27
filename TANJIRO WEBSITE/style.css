@@ -23,13 +23,14 @@ body{
     background-size: cover;
 }
 
-.hero .header .logo h2 a{
+.hero .header .logo h2 {
     display: block;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 600;
     text-decoration: none;
     color: white;
     font-family: "Noto Serif JP",serif;
+    padding: 20px;
 }
 
 .hero .header{
@@ -47,6 +48,7 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: white;
+    margin-top: 80px;
     margin-left: 80px;
     font-weight: 600;
     border-bottom: 2px solid transparent;
@@ -72,6 +74,7 @@ nav ul li.btn a{
     font-weight: 600;
     margin-left: 150px;
     margin-left: 5vw;
+}
 
 nav ul li.btn:hover a{
     border: 1px solid white;
@@ -79,6 +82,7 @@ nav ul li.btn:hover a{
     background: white;
     transition: .4s;
 }
+
 
 .content{
     padding-top: 140px;
@@ -128,6 +132,7 @@ nav ul li.btn:hover a{
 }
 
 .content .main-text a:hover{
+    will-change: transform;
     transform: scale(1.2);
     border: 1px solid #f5dca8;
     background: transparent;
