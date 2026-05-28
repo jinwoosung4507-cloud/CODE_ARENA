@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    overflow-x: hidden;
+    background-image: url(luffy.jpg);
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo .logo image{
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+    object-fit: cover;
+
+}
