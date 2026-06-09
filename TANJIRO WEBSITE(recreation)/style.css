@@ -1,0 +1,59 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* navbar */
+
+header{
+    background-color: black;
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1{
+    color:white;
+    font-family: "Protest Revolution", sans-serif;
+}
+
+.menu{
+    list-style: none;
+    display:flex;
+    gap: 60px;
+}
+
+.menu a{
+    color:white;
+    font-family: "Nunito",sans-serif;
+}
+
+/* hero-content */
+
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(tanjiro.jpg);
+    background-size: 100%;
+    background-size: cover;
+}
+
+.hero-content .maintext{
+    position: relative;
+    z-index: 2;
+    margin-bottom: 50px;
+
+}

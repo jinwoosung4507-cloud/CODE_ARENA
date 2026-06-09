@@ -42,7 +42,8 @@ body{
 
 nav ul li{
     list-style: none;
-    display: inline-block;
+    display: flex;
+    align-items: center;
 }
 
 nav ul li a{
